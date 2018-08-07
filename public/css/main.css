@@ -1,0 +1,15 @@
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.footer {
+  background-color: white;
+}
+
+.card-footer-item:not(:last-child) {
+  border-right: 0px;
+}
+
+.is-primary {
+  background-color: #4A90E2 !important;
+}

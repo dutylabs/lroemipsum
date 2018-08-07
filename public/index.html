@@ -5,57 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LRoEM Ipsum 🇷🇴 </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
-    <script defer src="index.js">
-    </script>
-    <script defer>
-      function change() {
-        sourceIndex = document.getElementById("source").selectedIndex;
-        lengthIndex = document.getElementById("length").selectedIndex;
-        lipsum = new LoremIpsum(sourceIndex, lengthIndex);
-        document.getElementById("text").innerHTML = lipsum.generate();
-      }
-    </script>
+    <script defer src="js/index.js"></script>
+    <script defer src="js/lorem.js"></script>
   </head>
   <body>
     <section class="hero is-medium">
       <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="title is-size-1">
-            LRoEm Ipsum 🇷🇴
-          </h1>
-          <h2 class="subtitle is-size-3">
-            Lorem Lipsum pentru <strong>românași</strong>
-          </h2>
+        <div class="columns is-centered">
+          <div class="column is-one-third">
+            <img src="img/logo.png" />
+          </div>
+          <div class="column is-one-third">
+            <div class="is-pulled-left">
+              <h1 class="title is-size-1">
+                LRoEm Ipsum 🇷🇴
+              </h1>
+              <h2 class="subtitle is-size-3">
+                Generator de text, direct din ❤️ inima Ardealului
+              </h2>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section class="hero">
       <div class="hero-body has-text-centered">
-        <form class="form">
-          <div class="select is-large">
-            <select id="length">
-              <option>Text scurt 😔</option>
-              <option>Text mediu 😁</option>
-              <option>Text lung 😎</option>
-            </select>
+        <div class="columns is-centered">
+          <div class="column is-one-third">
+            <div id="source" class="dropdown-content">
+              <a class="dropdown-item is-active">
+                Fraze românești 🇷🇴
+              </a>
+              <a class="dropdown-item">
+                Corneliu Vadim Tudor 😤
+              </a>
+              <a class="dropdown-item">
+                Nicușor de la Brăila 🏖
+              </a>
+            </div>
           </div>
-          <div class="select is-large">
-            <select id="source">
-              <option>Fraze românești 🇷🇴</option>
-              <option>Corneliu Vadim Tudor 😤</option>
-              <option>Nicușor de la Brăila 🏖</option>
-            </select>
+          <div class="column is-one-third">
+            <div id="length" class="dropdown-content">
+              <a class="dropdown-item is-active">
+                Text scurt 😔
+              </a>
+              <a class="dropdown-item">
+                Text mediu 😁
+              </a>
+              <a class="dropdown-item">
+                Text lung 😎
+              </a>
+            </div>
           </div>
-          <input class="button is-large" onclick="change()" type="button" value="Genereaza 💪" />
-        </form>
+        </div>
+        <div class="from">
+          <input id="generate" class="button is-large is-primary" onclick="change()" type="button" value="Generează 💪" />
+        </div>
         <div class="section">
           <div class="container">
             <div class="card">
               <header class="card-header">
-                <a href="#" class="card-footer-item">Copiaza textul 😱</a>
-                <a href="#" class="card-footer-item">Sugereaza fraze 💡</a>
+                <a class="card-footer-item" onclick="copyTextToClipboard()">Copiază textul 😱</a>
+                <a class="card-footer-item" onclick="suggestPhrases()">Sugerează fraze 💡</a>
               </header>
               <div class="card-content">
                 <div class="content">
@@ -73,8 +88,8 @@
           Made with <i class="heartbeat fas fa-heart"></i> at <a target="_blank" href="https://dutylabs.ro">dutylabs</a>
         </p>
         <p>
-          Multumiri speciale celor care au contribuit la fraze: Alex Ionescu, Dan Ionescu, Cosmin Rusu,
-          Etc Etcetera, Bla bla
+          Mulțumiri speciale celor care au contribuit la fraze: Alex Ionescu, Dan Ionescu, Cosmin Rusu,
+          Etc Etcetera, bla bla
         </p>
       </div>
     </footer>
