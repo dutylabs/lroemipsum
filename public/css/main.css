@@ -24,6 +24,7 @@ body {
 
 .menu-item:hover {
   background-color: #EDEDED !important;
+  cursor: pointer;
 }
 
 .menu-item.is-active {
