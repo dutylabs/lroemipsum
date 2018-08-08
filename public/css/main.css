@@ -13,3 +13,20 @@ body {
 .is-primary {
   background-color: #4A90E2 !important;
 }
+
+.dropdown-content {
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19) !important
+}
+
+.menu-item {
+  padding: 20px;
+}
+
+.menu-item:hover {
+  background-color: #EDEDED !important;
+}
+
+.menu-item.is-active {
+  background-color: #3273dc !important;
+  color: #fff;
+}
