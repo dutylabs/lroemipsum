@@ -1,5 +1,2 @@
 # redirect multiple subdomains to main one
-https://loremipsum.dutylabs.ro/* https://lroemipsum.dutylabs.ro/:splat 301!
-https://ipsum.dutylabs.ro/* https://lroemipsum.dutylabs.ro/:splat 301!
-https://lorem.dutylabs.ro/* https://lroemipsum.dutylabs.ro/:splat 301!
-https://jovial-khorana-7a5d60.netlify.com/* https://lroemipsum.dutylabs.ro/:splat 301!
+https://lroemipsum.netlify.com/* https://lroemipsum.dutylabs.ro/:splat 301!
