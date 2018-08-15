@@ -1,6 +1,5 @@
 $(document).ready(function() {
   init();
-  change();
   $('.dropdown-content .dropdown-item').click(function() {
     $(this).parent().find('.is-active').removeClass('is-active');
     $(this).addClass('is-active')
@@ -65,10 +64,19 @@ function getLengthQueryString(sourceIndex) {
 function init() {
   sourceQueryString = getQueryStringParameter("sursa");
   lengthQueryString = getQueryStringParameter("lungime");
-  $('#source .dropdown-item:eq(' + getSourceIndexFromString(sourceQueryString) + ')')
+  if (sourceQueryString == "") {
+    sourceQueryString = "fraze-romanesti"
+  }
+  if (lengthQueryString == "") {
+    lengthQueryString = "text-scurt"
+  }
+  sourceIndex = getSourceIndexFromString(sourceQueryString)
+  lengthIndex = getLengthIndexFromString(lengthQueryString)
+  $('#source .dropdown-item:eq(' + sourceIndex + ')')
       .addClass('is-active');
-  $('#length .dropdown-item:eq(' + getLengthIndexFromString(sourceQueryString) + ')')
+  $('#length .dropdown-item:eq(' + lengthIndex + ')')
       .addClass('is-active');
+  generate(sourceIndex, lengthIndex);
 }
 
 function change() {
@@ -76,15 +84,19 @@ function change() {
   sourceIndex = $('#source .dropdown-item').index(sourceSelected);
   lengthSelected = $('#length .is-active').first();
   lengthIndex = $('#length .dropdown-item').index(lengthSelected);
-  lipsum = new LoremIpsum(sourceIndex, lengthIndex);
-  document.getElementById('text').innerHTML = lipsum.generate();
   sourceQueryString = getSourceQueryString(sourceIndex);
-  lengthQueryString = getSourceQueryString(lengthIndex);
+  lengthQueryString = getLengthQueryString(lengthIndex);
   new_uri = updateQueryStringParameter(window.location.href,  "sursa", sourceQueryString);
   new_uri = updateQueryStringParameter(new_uri, "lungime", lengthQueryString);
   if (history.pushState) {
     window.history.pushState({ path: new_uri }, '', new_uri);
   }
+  generate(sourceIndex, lengthIndex);
+}
+
+function generate(sourceIndex, lengthIndex) {
+  lipsum = new LoremIpsum(sourceIndex, lengthIndex);
+  document.getElementById('text').innerHTML = lipsum.generate();
 }
 
 function copyTextToClipboard() {
