@@ -31,3 +31,7 @@ body {
   background-color: #3273dc !important;
   color: #fff;
 }
+
+.is-medium .hero-body {
+  padding-bottom: 4rem !important;
+}
