@@ -165,6 +165,22 @@ WORDS_RO = [
   'mi-am baut salariul','spargem o samanta','boss cf?','as manca o shaorma','sunt constipat',
   'bogda proste',
   'eu vara nu dorm',
+  'mi-a cazut slanina de pe pita',
+  'intre doua nu ma ploua',
+  'apleaca-te ca daca nu ma aplec eu',
+  'tine spatele ala drept cand te apleci',
+  'o beroasa doua trei, si ficatu e mai grei',
+  'e prea bun, prea ca la tara',
+  'ai sa-mi imprumuti 5 milioane pala la salar',
+  'iara nu mai am bani',
+  'din cauza la sotia mea',
+  'din cauza sotului meu',
+  'iara umblu pe la bagaboante',
+  'pentru ca domnisoarele sunt de vina',
+  'in peretele de sus',
+  'sub montumentul lui Basescu',
+  'si ma simt ca un zeu',
+  'fiindca nu ma simt ca un zeu'
 ];
 WORDS_NICUSOR = [
   'cacat','pisat','unt','mazga','coptura galbena','diarie','mandarie','aoaleu','sicutza','salam','mandarie de mandarie','apa plata','morena','n-ai un leu?'
