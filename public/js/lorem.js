@@ -347,7 +347,7 @@ WORDS_MANELE = [
   'ca in rest avem de toate da da da',
   'jura-mi ca amanta n-ai',
   'dar ai de belea sa dai, spune-mi unde ai fost azi noapte',
-  'avioan cu motor du-ma in America',
+  'avion cu motor du-ma in America',
   'si bate tari tari tari cu piciorul in podea',
   'rita rita gargarita hai si joaca pe manea',
   'motoare motoare, cu turbo reactoare',
