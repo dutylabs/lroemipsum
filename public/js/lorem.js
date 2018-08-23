@@ -180,7 +180,10 @@ WORDS_RO = [
   'in peretele de sus',
   'sub montumentul lui Basescu',
   'si ma simt ca un zeu',
-  'fiindca nu ma simt ca un zeu'
+  'fiindca nu ma simt ca un zeu',
+  'muie psd',
+  'muie psd',
+  'muie psd'
 ];
 WORDS_NICUSOR = [
   'cacat','pisat','unt','mazga','coptura galbena','diarie','mandarie','aoaleu','sicutza','salam','mandarie de mandarie','apa plata','morena','n-ai un leu?'
