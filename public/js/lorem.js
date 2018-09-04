@@ -48,7 +48,7 @@ var LoremIpsum = function(index, length) {
       LoremIpsum.WORDS = WORDS_NICUSOR;
       break;
     case 3:
-      LoremIpsum.WORDS = WORDS_ELFUL;
+      LoremIpsum.WORDS = WORDS_CLASICI;
       break;
     case 4:
       LoremIpsum.WORDS = WORDS_MANELE;
@@ -154,8 +154,19 @@ WORDS_VADIM = [
   'Ma suna pe telefonul meu, nu? Altminteri moare emisiunea, nu?',
   'deschide-l',
   'cretinul dracului',
+  'Marian, adu telefonul',
 ];
 WORDS_RO = [
+  'tace si face',
+  'mananci cacat',
+  'cine sapa groapa altuia',
+  'cade singur in ea',
+  'ce tie nu-ti place',
+  'altuia nu face',
+  'Ana are mere',
+  'pai da, cum să nu știu?',
+  'ba, tu știi cine sunt eu?',
+  'ia, vino puțin, că nu-ți fac nimic',
   'niste pateu', 'o shaorma cu de toate va rog','la pachet','m-am facut manga','palinca aia blana','cea mai frumoasa femeie e aia de tace',
   'cand o zbura porcul','visinata','bere la pet','as bea o plasticata','ai bani, mananci, n-ai bani, nu ti-e foame','si-a murit dumitru',
   'as zice un banc cu bula','fratele Nicolae Guta','si cand mor am valoare',
@@ -188,40 +199,13 @@ WORDS_RO = [
 WORDS_NICUSOR = [
   'cacat','pisat','unt','mazga','coptura galbena','diarie','mandarie','aoaleu','sicutza','salam','mandarie de mandarie','apa plata','morena','n-ai un leu?',
 ];
-WORDS_ELFUL = [
-  'ONI-ul s-a terminat',
-  'Indiferent de rezultat',
-  'mai raman 2 lucruri pe care trebuie sa le faceti',
-  'betia de dupa proba',
-  'voiam si eu o betie linistita',
-  'ajung sa cunosc 4 boschetari noi',
-  'sper ca voi v-ati distrat mai bine',
-  'despre teoria pensionarii',
-  'o teorie economica alternativa',
-  'teoria pensionarii sa va raspunda la orice intrebare',
-  'te intrebi care ar fi cel mai util lucru de stiut pentru facultate',
-  'si apoi pentru absolvire',
-  'mai stiu eu ce alte cacaturi iti trec prin minte',
-  'o maneluta sa ne incalzim',
-  'supravietuirea',
-  'sclavia si pensionarea',
-  'nu ai bani sa iti faci nevoile si stai la mila parintilor',
-  'faci meditatii la info',
-  'sclavia reprezinta munca la o corporatie',
-  'securist infect',
-  'te pisi pentru ultima oara in chiuveta firmei',
-  'termini sclavia pe viata',
-  'imi doresc sa cumpar 10 ficati de rezerva, ca sa pot bea linistit',
-  'cariera timpurie de alcoolist',
-  'cum ar fi Tristu, Spartu',
-  'Elvis, Moldoveanul sau pe Andrei Jamaica',
-  'sa mergem in parcul Unirii sa bagam un pet',
-  'castiga 18 milioane pe luna',
-  'in timpul orelor de fizica de liceu mergeam sa beau',
-  'beau bere de 1 leu si vb golaneala',
-  'imi voi putea savura petul in sfarsit',
-  'imi spune ca par cam tocilar',
-  'sa-mi cresc smecheria',
+WORDS_CLASICI = [
+  'stiu ca sunt prost',
+  'cand ma uit in jur, prind curaj',
+  'somnoroase pasarele',
+  'pe la cuiburi se aduna',
+  'se ascund in ramurele',
+  'noapte buna',
 ];
 WORDS_MANELE = [
   'si cand mor am valoare',

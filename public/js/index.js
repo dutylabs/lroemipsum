@@ -26,7 +26,7 @@ function getSourceQueryString(sourceIndex) {
     case 2:
       return "nicusor-de-la-braila";
     case 3:
-      return "elful";
+      return "clasici";
     case 4:
       return "manele";
   }
@@ -37,7 +37,7 @@ function getSourceIndexFromString(sourceQueryString) {
     "fraze-romanesti",
     "vadim-tudor",
     "nicusor-de-la-braila",
-    "elful",
+    "clasici",
     "manele"
   ].indexOf(sourceQueryString);
 }
