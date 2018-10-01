@@ -35,3 +35,20 @@ body {
 .is-medium .hero-body {
   padding-bottom: 4rem !important;
 }
+
+.intro {
+  padding-top: 0 !important;
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.banner h2 {
+  position: absolute;
+  font-size: 2vw !important;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
