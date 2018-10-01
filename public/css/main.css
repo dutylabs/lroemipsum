@@ -48,7 +48,7 @@ body {
 .banner h2 {
   position: absolute;
   font-size: 2vw !important;
-  top: 25%;
+  top: 27%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
